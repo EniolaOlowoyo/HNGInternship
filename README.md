@@ -1,7 +1,7 @@
 # HNGInternship
 My HNG Internship 6.0 Repository
 
-This is a project based on designing my Resumé based on simple HTML codes without the use of CSS or JS
+This is a project based on designing my Resumé based on simple HTML codes with the basic use of CSS or JS
 
 My Twitter Post: https://twitter.com/Iola___/status/1164844811465179137
 
