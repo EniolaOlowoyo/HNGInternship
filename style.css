@@ -1,6 +1,17 @@
-h1 { text-align: center; }
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(95, 77, 67, 0.5)), to(rgba(95, 77, 67, 0.5))),
+  url("https://res.cloudinary.com/iolarav/image/upload/v1567462458/bg-masthead_qiflxg.jpg") center no-repeat fixed;
+  background-size: cover;
+  
+}
+
+h1 { 
+    text-align: center;
+    color: #fff;
+}
 
 table {
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4), 0 5px 15px 0 rgba(0, 0, 0, 0.2);
     width: 800px;
     margin-left: auto;
@@ -10,14 +21,17 @@ table {
 
 td.info { 
     text-align: left;
-    
     border-top: 1px solid black;
 }
-
 
 td.role { text-align: center; }
 
 div.contact, td.role { color: mediumvioletred; }
+
+td:first-child,
+th:first-child {
+    padding-right: 40px;
+}
 
 div.top {
     padding: 15px 0;
@@ -27,7 +41,7 @@ img {
     width: 180px;
     height: 175px;
     border-radius: 50%;
-    margin-right: 40px;
+    
  }
 
 p, h2, h3 { margin: 0; }
@@ -36,7 +50,6 @@ p.more { margin-top: 15px; }
 
 form {
     width: 600px;
-    background: #fff;
     padding: 15px 0;
     margin-left: auto;
     margin-right: auto;
@@ -46,13 +59,17 @@ label {
     margin-bottom: 5px
 }
 
+input, textarea {
+    background-color: transparent;
+    border: 1px solid #a3a3a3;
+}
+
 textarea {
-    width: 100%;
+    width: 593px;
     resize: none;
 }
 
 input {
-    border: 1px solid #ccc;
     padding: 10px;
     display: block;
     width: 100%;
@@ -70,14 +87,22 @@ input {
 input[type="submit"] {
     font-size: 110%;
     font-weight: 100;
-    background: #006dcc;
-    border-color: #016BC1;
-    box-shadow: 0 3px 0 #0165b6;
-    color: #fff;
+    border: solid 2px mediumvioletred;
+    color: mediumvioletred;
     margin-top: 10px;
+    border-radius: 50px;
     cursor: pointer;
+    outline: none;
 }
 
+input[type="submit"].active,
 input[type="submit"]:hover {
-    background: #0165b6;
+    border-radius: 50px;
+    background: mediumvioletred;
+    border-color: #c71586e1;
+    color: white;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
 }

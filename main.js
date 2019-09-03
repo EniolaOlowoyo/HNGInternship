@@ -19,7 +19,7 @@ function validateForm() {
         printError("nameErr", "Please enter your name");
     } 
     else if(name.length < 4){
-        printError("nameErr", "Please enter a valid name (at least 4 characters)");
+        printError("nameErr", "Name is too short (at least 4 characters)");
     }
     else {
         var regex = /^[a-zA-Z\s]+$/;                
@@ -58,7 +58,7 @@ function validateForm() {
         printError("messageErr", "Please enter a message");
     } 
     else if(message.length < 20){
-        printError("messageErr", "Please enter a valid message (at least 20 characters)");
+        printError("messageErr", "Message is too short (at least 20 characters)");
     }
     else {
         printError("messageErr", "");
